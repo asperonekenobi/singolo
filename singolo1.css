@@ -164,3 +164,107 @@ body {
 .phone__shadow--horiz {
   transform: scale(1, -1) translate(0, 25px);
 }
+
+.services {
+  background-color: #f2f2f2;
+  height: 495px;
+  border-bottom: 6px solid #ffffff;
+}
+
+.services__descriptions {
+  padding-top: 60px;
+  margin-bottom: 46px;
+}
+
+.services__title {
+  margin: 0;
+  display: block;
+  font-size: 3rem;
+  color: #666d89;
+  font-weight: 900;
+  margin-bottom: 19px;
+  text-align: justify;
+  letter-spacing: -0.1px;
+}
+
+.services__text {
+  color: #767e9e;
+  font-size: 1.8rem;
+  font-weight: 300;
+  line-height: 1.67;
+  text-align: justify;
+}
+
+.services__row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-content: space-between;
+  height: 209px;
+}
+
+.services-item__row {
+  display: flex;
+  width: 300px;
+  height: 85px;
+  overflow: hidden;
+  text-overflow: clip;
+}
+
+.services-item__icon {
+  display: block;
+  width: 60px;
+  height: 60px;
+  border: 2px solid #666d89;
+  border-radius: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.services-item__icon--pen {
+  background-image: url(./assets/img/icon/pen.svg);
+
+}
+
+.services-item__icon--bulb {
+  background-image: url(./assets/img/icon/bulb.svg);
+}
+
+.services-item__icon--heart {
+  background-image: url(./assets/img/icon/heart.svg);
+}
+
+.services-item__icon--phone {
+  background-image: url(./assets/img/icon/phone.svg);
+}
+
+.services-item__icon--bubble {
+  background-image: url(./assets/img/icon/bubble.svg)
+}
+
+.services-item__icon--star {
+  background-image: url(./assets/img/icon/star.svg);
+}
+
+.service-item__text {
+  padding-left: 20px;
+  width: 220px;
+  height: 100px;
+}
+
+.service-item__title {
+  font-size: 1.8rem;
+  line-height: 17px;
+  color: #666d89;
+  font-weight: 900;
+  margin: 0;
+}
+
+.services-item__descriptions {
+  font-size: 1.2rem;
+  line-height: 21px;
+  color: #767e9e;
+  font-weight: 400;
+  margin: 10px 0 0 0;
+  text-align: justify;
+}
