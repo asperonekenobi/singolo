@@ -96,23 +96,20 @@ body {
 
 .slider__row {
   display: flex;
-  align-items: center;
   justify-content: space-between;
   padding-top: 54px;
 }
 
 .slider__button {
-  outline: none;
+  background: transparent url(./assets/img/slider/arrow.svg) no-repeat center center;
+  width: 16px;
+  height: 27px;
   border: none;
-  background: none;
-  cursor: pointer;
-  padding: 1px;
-  padding-top: 26px;
+  padding: 241px 0;
 }
 
 .slider__button--right {
   transform: rotate(180deg);
-  padding-bottom: 44px;
 }
 
 .image__row {
