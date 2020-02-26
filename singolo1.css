@@ -106,6 +106,7 @@ body {
   height: 27px;
   border: none;
   padding: 241px 0;
+  cursor: pointer;
 }
 
 .slider__button--right {
