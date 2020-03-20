@@ -2,10 +2,12 @@
 *:before,
 *:after {
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 html {
   font-size: 10px;
+  min-width: 1020px;
 }
 
 body {
@@ -16,7 +18,7 @@ body {
 
 .container {
   width: 1020px;
-  margin: 0px auto;
+  margin: 0 auto;
   padding: 0 40px;
 }
 
@@ -24,8 +26,19 @@ body {
   background-color: #2d303a;
   color: #ffffff;
   padding: 0 0 12px;
+  width: 100%;
+  position: fixed;
+  z-index: 1000;
   border-bottom: 6px solid #323746;
 }
+
+#services,
+#portfolio,
+#about,
+#contact {
+  scroll-margin-top: 94px;
+}
+
 
 .header__row {
   display: flex;
@@ -62,7 +75,7 @@ body {
 
 .nav-list__item::before {
   position: absolute;
-  top: 0px;
+  top: 0;
   left: 14px;
   opacity: 0.2;
   content: '·';
@@ -91,7 +104,7 @@ body {
 .slider {
   background-color: #f06c64;
   border-bottom: 6px solid #ea676b;
-  padding: 0px 0 59px;
+  padding: 95px 0 59px;
 }
 
 .slider__row {
