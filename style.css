@@ -157,6 +157,10 @@ body {
   height: 458px;
 }
 
+.phone__base {
+  cursor: pointer;
+}
+
 .phone__screen {
   position: absolute;
   top: 50%;
@@ -178,6 +182,10 @@ body {
 
 .phone__shadow--horiz {
   transform: scale(1, -1) translate(0, 25px);
+}
+
+.hide-screen {
+  display: none;
 }
 
 .services {
