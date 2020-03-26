@@ -127,7 +127,7 @@
             odio sem nec elit.</p>
         </div>
         <div class="tag-menu">
-          <ul class="tag-menu__row">
+          <ul class="tag-menu__row" id="tag-menu__row">
             <li class="tag-menu__item tag-menu__item--active">All</li>
             <li class="tag-menu__item">Web Design</li>
             <li class="tag-menu__item">Graphic Design</li>
@@ -135,7 +135,7 @@
           </ul>
         </div>
         <div class="gallery">
-          <div class="gallery__row">
+          <div class="gallery__row" id="gallery__row">
             <div class="gallery__item"><img src="./assets/img/portfolio-images/row1/1.jpg" alt=""></div>
             <div class="gallery__item"><img src="./assets/img/portfolio-images/row1/2.jpg" alt=""></div>
             <div class="gallery__item"><img src="./assets/img/portfolio-images/row1/3.jpg" alt=""></div>
@@ -212,10 +212,10 @@
         </div>
         <div class="contacts">
           <div class="contacts-row">
-            <form action="#" method="post" class="contacts-form">
+            <form action="#" method="post" class="contacts-form" id="contacts-form">
               <input type="text" placeholder="Name (Required)" class="contacts-form__item" required>
               <input type="email" placeholder="Email (Required)" class="contacts-form__item" required>
-              <input type="text" placeholder="Subject" class="contacts-form__item">
+              <input type="text" placeholder="Subject" class="contacts-form__item" id="subject">
               <textarea name="form-descriptions" id="form-descriptions" cols="30" rows="10"
                         placeholder="Describe your project in detail..."
                         class="contacts-form__item contacts-form__textarea"></textarea>
@@ -259,6 +259,16 @@
       </div>
     </footer>
   </main>
+<!--  Modal-->
+  <div class="modal-wrap" id="modal-wrap" hidden="true">
+    <div class="modal">
+      <p>Письмо отправлено</p>
+      <p></p>
+      <p></p>
+      <button type="button" id="modal-btn" class="contacts-form__button">OK</button>
+    </div>
+  </div>
+
 </div>
 <script src="./script.js"></script>
 </body>
