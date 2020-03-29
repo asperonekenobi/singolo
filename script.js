@@ -44,7 +44,7 @@ const tags = document.querySelectorAll('.tag-menu__item');
 tagsMenu.addEventListener('click', (event) => {
   tags.forEach(tag => tag.classList.remove('tag-menu__item--active'));
   event.target.classList.add('tag-menu__item--active');
-// Add  new order pictures
+  // Add  new order pictures
   document.querySelector('#gallery__row').querySelectorAll('.gallery__item').forEach(el => {
     el.style.order = Math.floor(1 + Math.random() * 12);
   });
@@ -149,14 +149,14 @@ carousel_slide.addEventListener('transitionend', () => {
 // Turn ON/Off display
 phoneVerticalWrapper.addEventListener('click', () => {
   phoneVerticalScreen.classList.contains('display_none') ?
-        phoneVerticalScreen.classList.remove('display_none') :
-        phoneVerticalScreen.classList.add('display_none');
+    phoneVerticalScreen.classList.remove('display_none') :
+    phoneVerticalScreen.classList.add('display_none');
 });
 
 phoneHorizontalWrapper.addEventListener('click', () => {
   phoneHorizontalScreen.classList.contains('display_none') ?
-        phoneHorizontalScreen.classList.remove('display_none') :
-        phoneHorizontalScreen.classList.add('display_none');
+    phoneHorizontalScreen.classList.remove('display_none') :
+    phoneHorizontalScreen.classList.add('display_none');
 });
 
 //  Burger
@@ -195,5 +195,3 @@ mobileMenu.addEventListener('click', (event) => {
     document.querySelector('body').classList.remove('stop');
   }
 })
-
-
